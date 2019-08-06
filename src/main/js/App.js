@@ -1,7 +1,7 @@
 import React from 'react';
 import './app.css';
 
-class App = () => (
+const App = () => (
             <div className = 'main'>
                 
             </div>
