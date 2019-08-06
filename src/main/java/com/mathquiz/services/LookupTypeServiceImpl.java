@@ -22,5 +22,4 @@ public class LookupTypeServiceImpl implements LookupTypeService {
 	public LookupType findById(String id) {
 		return lookupTypeRepository.getOne(id);
 	}
-
 }

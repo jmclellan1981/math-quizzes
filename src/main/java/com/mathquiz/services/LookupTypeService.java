@@ -1,6 +1,6 @@
 package com.mathquiz.services;
 
-import com.mathquiz.LookupType;
+import com.mathquiz.domain.LookupType;
 
 public interface LookupTypeService {
     public String save(LookupType lookupType);

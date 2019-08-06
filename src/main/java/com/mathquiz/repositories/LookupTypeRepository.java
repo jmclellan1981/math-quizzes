@@ -1,6 +1,6 @@
 package com.mathquiz.repositories;
 
-import com.opdl.dartstats.domain.LookupType;
+import com.mathquiz.domain.LookupType;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

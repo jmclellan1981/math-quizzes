@@ -2,8 +2,8 @@ package com.mathquiz.repositories;
 
 import java.util.Set;
 
-import com.opdl.dartstats.domain.LookupData;
-import com.opdl.dartstats.domain.LookupType;
+import com.mathquiz.domain.LookupData;
+import com.mathquiz.domain.LookupType;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

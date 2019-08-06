@@ -2,7 +2,7 @@ package com.mathquiz.services;
 
 import java.util.Set;
 
-import com.opdl.dartstats.domain.LookupData;
+import com.mathquiz.domain.LookupData;
 
 public interface LookupDataService {
     public String save(LookupData lookupData);
