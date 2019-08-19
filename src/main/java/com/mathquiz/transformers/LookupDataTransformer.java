@@ -1,5 +1,8 @@
 package com.mathquiz.transformers;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.annotation.PostConstruct;
 
 import com.mathquiz.domain.LookupData;
@@ -41,4 +44,14 @@ public class LookupDataTransformer {
         viewModel.setName(lookupData.getName());
         return viewModel;
     }
+
+	public static List<LookupDataViewModel> transformToViewModel(List<LookupData> dataList) {
+		List<LookupDataViewModel> viewModelList = new ArrayList<>();
+		if(dataList != null) {
+			for(LookupData data : dataList) {
+				viewModelList.add(transformToViewModel(data));
+			}
+		}
+		return viewModelList;
+	}
 }

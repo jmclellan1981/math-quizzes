@@ -1,7 +1,6 @@
 package com.mathquiz.services;
 
-import java.util.Set;
-
+import java.util.List;
 import com.mathquiz.domain.LookupData;
 import com.mathquiz.domain.LookupType;
 import com.mathquiz.repositories.LookupDataRepository;
@@ -28,7 +27,7 @@ public class LookupDataServiceImpl implements LookupDataService {
     }
 
     @Override
-    public Set<LookupData> findAllLookupDataByType(String type) {
+    public List<LookupData> findAllLookupDataByType(String type) {
         LookupType lookupType = lookupTypeRepository.findByName(type);
         return lookupDataRepository.findByLookupType(lookupType);
     }

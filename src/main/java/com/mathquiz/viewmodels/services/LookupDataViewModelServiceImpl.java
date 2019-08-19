@@ -5,6 +5,8 @@ import com.mathquiz.services.LookupDataService;
 import com.mathquiz.transformers.LookupDataTransformer;
 import com.mathquiz.viewmodels.LookupDataViewModel;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -26,5 +28,11 @@ public class LookupDataViewModelServiceImpl implements LookupDataViewModelServic
         LookupData lookupData =  lookupDataService.findLookupDataById(id);
         return LookupDataTransformer.transformToViewModel(lookupData);
     }
+
+	@Override
+	public List<LookupDataViewModel> getByType(String type) {
+		List<LookupData> dataList = lookupDataService.findAllLookupDataByType(type);
+		return LookupDataTransformer.transformToViewModel(dataList);
+	}
 
 }

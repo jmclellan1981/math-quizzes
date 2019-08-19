@@ -1,7 +1,6 @@
 package com.mathquiz.repositories;
 
-import java.util.Set;
-
+import java.util.List;
 import com.mathquiz.domain.LookupData;
 import com.mathquiz.domain.LookupType;
 
@@ -11,5 +10,5 @@ public interface LookupDataRepository extends JpaRepository<LookupData, String>{
 
     LookupData findByName(String name);
 
-	Set<LookupData> findByLookupType(LookupType lookupType);
+	List<LookupData> findByLookupType(LookupType lookupType);
 }
